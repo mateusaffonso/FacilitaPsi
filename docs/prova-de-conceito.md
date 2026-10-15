@@ -46,6 +46,14 @@ Celulares e tablets só instalam o app a partir de um endereço **https**, entã
 - **Galaxy Tab S9+:** abra no **Chrome** → menu ⋮ → **Instalar app** (ou "Adicionar à tela inicial").
 - **Computador Windows:** abra no **Chrome** ou no **Edge** → ícone de instalar na barra de endereço.
 
+### Atualizações do app
+
+Quando uma versão nova é publicada, o app mostra o aviso **"Nova versão do app disponível"**. Toque em **Atualizar**, depois de salvar o que estiver escrevendo. O app nunca se atualiza sozinho no meio do uso.
+
+> **Uma única vez:** aparelhos que abriram o app antes de 15/10/2026 ainda estão na versão sem esse aviso (e sem o Google configurado). Neles, feche o app por completo e abra de novo:
+> - **iPhone:** deslize o app para cima no seletor de apps e abra pelo ícone de novo.
+> - **Computador/tablet:** feche todas as abas e janelas do app e abra de novo.
+
 ---
 
 ## 4. Roteiro de testes (critérios de pronto)

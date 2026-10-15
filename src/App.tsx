@@ -1,5 +1,6 @@
 import { Center, Container, Loader } from '@mantine/core'
 import { useEffect, useState } from 'react'
+import AvisoAtualizacao from './app/AvisoAtualizacao'
 import { lerCofre } from './dados/db'
 import type { CofreChaves } from './seguranca/cripto'
 import Configurar from './telas/Configurar'
@@ -29,6 +30,7 @@ export default function App({ erroLogin }: { erroLogin?: string }) {
 
   return (
     <Container size="sm" py="md">
+      <AvisoAtualizacao />
       {estado.tela === 'carregando' && (
         <Center mih="60vh">
           <Loader />

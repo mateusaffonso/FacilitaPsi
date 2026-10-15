@@ -40,9 +40,9 @@ export default defineConfig({
     react(),
     politicaDeSeguranca(),
     VitePWA({
-      registerType: 'autoUpdate',
-      injectRegister: 'script',
-      includeAssets: ['favicon.png', 'apple-touch-icon.png', 'robots.txt'],
+      // A versão nova só entra em uso quando a usuária toca em "Atualizar" (src/app/AvisoAtualizacao.tsx).
+      registerType: 'prompt',
+      injectRegister: false,
       manifest: {
         name: 'Facilita Psi',
         short_name: 'Facilita Psi',
