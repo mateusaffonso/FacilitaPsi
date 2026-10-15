@@ -6,7 +6,7 @@ Este passo libera o app para guardar os arquivos criptografados no Google Drive 
 > Os nomes dos menus podem variar um pouco. O Google muda o console com frequência.
 
 Antes de começar, tenha à mão:
-- **seu usuário do GitHub** (ex.: `seu-usuario`). O app ficará em `https://SEU-USUARIO.github.io/facilita-psi/`;
+- **seu usuário do GitHub** (ex.: `seu-usuario`). O app ficará em `https://SEU-USUARIO.github.io/FacilitaPsi/`;
 - o **e-mail Google da psicóloga**.
 
 ---
@@ -54,7 +54,9 @@ Esse escopo só dá acesso aos arquivos que o próprio Facilita Psi criar. O app
    - `https://SEU-USUARIO.github.io`
 4. **URIs de redirecionamento autorizados** → adicione (com a barra no final):
    - `http://localhost:5173/`
-   - `https://SEU-USUARIO.github.io/facilita-psi/`
+   - `https://SEU-USUARIO.github.io/FacilitaPsi/`
+
+   Atenção às **maiúsculas**: o endereço precisa ser exatamente igual ao nome do repositório (`FacilitaPsi`).
 5. **Criar** e copie o **ID do cliente** (termina em `.apps.googleusercontent.com`).
 
 > O Client ID **não é segredo**: ele aparece no código do site de qualquer app que usa login do Google. O que protege os dados é a lista de usuários de teste (passo 4), o Drive privado e a senha do app. **Não** é preciso o "client secret", então não o copie para lugar nenhum.

@@ -121,7 +121,7 @@ Chave de recuperação (impressa) ───────────────�
 ## 7. Estrutura do repositório (proposta)
 
 ```
-facilita-psi/
+FacilitaPsi/
 ├── docs/                    especificação, arquitetura, guias
 ├── public/                  ícones, manifesto
 ├── src/

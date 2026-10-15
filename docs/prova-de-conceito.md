@@ -34,10 +34,10 @@ Outros comandos:
 
 Celulares e tablets só instalam o app a partir de um endereço **https**, então os testes nos aparelhos usam a versão publicada.
 
-1. Crie o repositório **público** `facilita-psi` no GitHub e envie o código (branch `main`).
+1. Crie o repositório **público** `FacilitaPsi` no GitHub e envie o código (branch `main`).
 2. No repositório → **Settings** → **Pages** → Source: **GitHub Actions**.
 3. Siga o [`guia-google-cloud.md`](guia-google-cloud.md) e cadastre a variável `VITE_GOOGLE_CLIENT_ID`.
-4. Cada envio à `main` publica o app automaticamente em `https://SEU-USUARIO.github.io/facilita-psi/`.
+4. Cada envio à `main` publica o app automaticamente em `https://SEU-USUARIO.github.io/FacilitaPsi/`.
    - Antes de publicar, o deploy **bloqueia** arquivos com cara de dado ou segredo (`scripts/verificar-dados.sh`) e roda os testes.
 
 ## 3. Instalar nos aparelhos
