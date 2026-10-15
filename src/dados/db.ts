@@ -70,6 +70,21 @@ function nomeDoAparelho(): string {
   return 'Aparelho'
 }
 
+export function contarPendentesDeEnvio(): Promise<number> {
+  return db.registros.where('pendenteEnvio').equals(1).count()
+}
+
+/**
+ * Apaga o cofre e os registros guardados SÓ neste aparelho.
+ * O que já foi sincronizado continua no Google Drive e nos outros aparelhos.
+ */
+export async function apagarDadosDoAparelho(): Promise<void> {
+  await db.delete()
+  for (const chave of Object.keys(localStorage)) {
+    if (chave.startsWith('fp.')) localStorage.removeItem(chave)
+  }
+}
+
 /** Identificador fixo deste aparelho, criado no primeiro uso. */
 export async function obterAparelho(): Promise<Aparelho> {
   const existente = await lerConfig<Aparelho>('aparelho')

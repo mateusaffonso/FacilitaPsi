@@ -34,7 +34,7 @@ export class ErroCofreDiferente extends Error {
   constructor() {
     super(
       'Este aparelho tem um cofre diferente do que está no Drive. ' +
-        'Apague os dados deste aparelho e use "Já uso em outro aparelho".',
+        'Toque em "Apagar dados deste aparelho" (no fim da tela) e configure de novo com "Já uso em outro aparelho".',
     )
     this.name = 'ErroCofreDiferente'
   }

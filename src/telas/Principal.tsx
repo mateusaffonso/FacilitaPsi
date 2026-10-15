@@ -29,6 +29,7 @@ import {
   type MetodoLogin,
 } from '../sincronizacao/google'
 import { sincronizar } from '../sincronizacao/sincronizar'
+import BotaoApagarDados from './BotaoApagarDados'
 import Cabecalho from './Cabecalho'
 
 const INTERVALO_SINCRONIZACAO_MS = 2 * 60 * 1000
@@ -314,6 +315,9 @@ function Diagnostico({ amostraCifrada }: { amostraCifrada?: string }) {
           </Code>
         </>
       )}
+      <Group mt="lg">
+        <BotaoApagarDados />
+      </Group>
     </Card>
   )
 }

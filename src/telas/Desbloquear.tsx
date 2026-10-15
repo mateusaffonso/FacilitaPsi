@@ -1,4 +1,4 @@
-import { Alert, Anchor, Button, Card, PasswordInput, Stack, TextInput } from '@mantine/core'
+import { Alert, Anchor, Button, Card, Group, PasswordInput, Stack, TextInput } from '@mantine/core'
 import { useState, type FormEvent } from 'react'
 import {
   abrirCofreComRecuperacao,
@@ -6,6 +6,7 @@ import {
   ErroSenhaIncorreta,
   type CofreChaves,
 } from '../seguranca/cripto'
+import BotaoApagarDados from './BotaoApagarDados'
 import Cabecalho from './Cabecalho'
 
 interface Props {
@@ -81,6 +82,9 @@ export default function Desbloquear({ cofre, erroLogin, onPronto }: Props) {
           </Anchor>
         </Stack>
       </Card>
+      <Group justify="center" mt="xl">
+        <BotaoApagarDados />
+      </Group>
     </>
   )
 }
