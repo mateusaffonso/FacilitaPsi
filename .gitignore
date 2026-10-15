@@ -1,0 +1,42 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Facilita Psi: nunca versionar dados, segredos ou exportações
+.env
+.env.*
+!.env.example
+exports/
+backups/
+*.zip
+chaves.json
+estado-*.json
+
+# Configurações locais do Claude Code
+.claude/
+
+# Identidade visual da psicóloga (logo e referências): fica só no computador
+assets/
+logo_*
+logo-*

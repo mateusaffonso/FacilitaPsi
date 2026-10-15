@@ -1,0 +1,6 @@
+body {
+  background: #faf8f7;
+  /* Respeita o entalhe e a barra inferior do iPhone com o app instalado. */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}
